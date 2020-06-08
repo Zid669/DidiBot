@@ -1,0 +1,32 @@
+{
+  "name": "didi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zid#6669",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^3.0.0",
+    "acceptmessage": "^1.1.0",
+    "akaneko": "^2.1.1",
+    "ascii-table": "0.0.9",
+    "canvacord": "^2.0.2",
+    "common-tags": "^1.8.0",
+    "coronabot.js": "^1.2.0",
+    "discord-economy": "^1.2.2",
+    "discord-hook-api": "^1.0.3",
+    "discord-image-generation": "^0.1.6",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "google-translate-api-v2": "^1.0.2",
+    "nodemon": "^2.0.4",
+    "random-puppy": "^1.1.0",
+    "sb-member": "^1.2.0",
+    "somewebhook": "^1.1.1",
+    "urban": "^0.3.2"
+  }
+}
