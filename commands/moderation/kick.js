@@ -14,10 +14,6 @@ module.exports = {
 
         const logChannel = message.guild.channels.resolve(logschannel[message.guild.id].channel) 
 
-        if(!logChannel){
-            message.reply("You don't have a log channel you can set one up using {prefix}logsset")
-        }
-
         if (message.deletable) message.delete();
 
         // No args
@@ -52,13 +48,13 @@ module.exports = {
                 .then(m => m.delete({timeout: 5000}));
         }
 
-        // Can't ban urself
+        
         if (toBan.id === message.author.id) {
             return message.reply("You can't kick yourself...")
                 .then(m => m.delete({timeout: 5000}));
         }
 
-        // Check if the user's banable
+        
         if (!toBan.bannable) {
             return message.reply("I can't kick that person due to role hierarchy, I suppose.")
                 .then(m => m.delete({timeout: 5000}));
@@ -75,7 +71,7 @@ module.exports = {
 
         const promptEmbed = new Discord.MessageEmbed()
             promptEmbed.setColor("GREEN")
-            promptEmbed.setAuthor(`<a:Loading:717240898551021609>This verification becomes invalid after 30s.`)
+            promptEmbed.setAuthor(`This verification becomes invalid after 30s.`)
             promptEmbed.setDescription(`Do you want to kick ${toBan}?`)
 
         // Send the message
