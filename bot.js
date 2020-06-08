@@ -68,8 +68,6 @@ client.on("message", async message => {
 
     let prefix = prefixes[message.guild.id].prefixes;
 
-    // Inside your message event, this code will stop any command during cooldown.
-// Should be placed after your code that checks for bots & prefix, for best performance
 
 
 
