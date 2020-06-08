@@ -1,4 +1,4 @@
-module.exports = async (member) => {
+module.exports = (member) => {
     const fs = require('fs')
     const Discord = require("discord.js")
     const guild = member.guild
