@@ -13,6 +13,10 @@ module.exports = {
         let logschannel = JSON.parse(fs.readFileSync("./logs.json", "utf8"))
 
         const logChannel = message.guild.channels.resolve(logschannel[message.guild.id].channel) 
+        
+        function Emoji(id) {
+      return bot.emojis.cache.get(id).toString();
+    }
 
 
 
@@ -75,7 +79,7 @@ module.exports = {
 
         const promptEmbed = new Discord.MessageEmbed()
             promptEmbed.setColor("GREEN")
-            promptEmbed.setAuthor(`This verification becomes invalid after 30s.`)
+            promptEmbed.setAuthor(` ${Emoji("717240898551021609")}This verification becomes invalid after 30s.`)
             promptEmbed.setDescription(`Do you want to ban ${toBan}?`)
 
          
