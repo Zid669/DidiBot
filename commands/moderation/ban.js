@@ -14,9 +14,7 @@ module.exports = {
 
         const logChannel = message.guild.channels.resolve(logschannel[message.guild.id].channel) 
         
-        function Emoji(id) {
-      return bot.emojis.cache.get(id).toString();
-    }
+      
 
 
 
@@ -75,11 +73,11 @@ module.exports = {
             **- banned by:** ${message.member} (${message.member.id})
             **- Reason:** ${args.slice(1).join(" ")}`);
 
-        const emojis = client.emojis.cache.get('717240898551021609').toString()
+       
 
         const promptEmbed = new Discord.MessageEmbed()
             promptEmbed.setColor("GREEN")
-            promptEmbed.setAuthor(` ${Emoji("717240898551021609")}This verification becomes invalid after 30s.`)
+            promptEmbed.setAuthor(`This verification becomes invalid after 30s.`)
             promptEmbed.setDescription(`Do you want to ban ${toBan}?`)
 
          
