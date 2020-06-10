@@ -13,6 +13,10 @@ module.exports = {
         let logschannel = JSON.parse(fs.readFileSync("./logs.json", "utf8"))
 
         const logChannel = message.guild.channels.resolve(logschannel[message.guild.id].channel) 
+        
+        if(!logchannel) {
+            message.reply('couldn't find log channel make one using !logsset')
+                          }
 
         if (message.deletable) message.delete();
 
