@@ -14,10 +14,9 @@ module.exports = {
 
         const logChannel = message.guild.channels.resolve(logschannel[message.guild.id].channel) 
         
-      
-
-
-
+        if(!logchannel) {
+            message.reply('couldn't find log channel make one using !logsset')
+                          }
         if (message.deletable) message.delete();
 
         // No args
